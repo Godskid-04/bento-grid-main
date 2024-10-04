@@ -1,57 +1,117 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6E85B7, #BFEAF5);
+    height: 100%;
+    margin: 0;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-
 }
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    width: 80%;
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.block {
-    padding: 20px;
-    border-radius: 10px;
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
     text-align: center;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #7A7A7A;
+    margin-bottom: 30px;
+}
+
+.join-button {
+    background-color: #25D366;
     color: white;
-
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
-.purple {
-    background-color: #6a0dad;
 
-}
-.yellow {
-    background-color: #ffcc00;
-    color: black;
-
-}
-.white {
-    background-color: white;
-    color: black;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-}
-.lavender {
-    background-color: #d4a5f4;
-    color: black;
-
-}
-button {
-    background: #6a0dad;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+.join-button:hover {
+    background-color: #1DA953;
     cursor: pointer;
-
-}
-button:hover {
-    background-color: #8a2be2;
 }
 
+.info-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.developer-types {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.developer-card {
+    background-color: #F7F9FC;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.developer-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.developer-card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.developer-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Video Section */
+.video-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+iframe {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .developer-types {
+        flex-direction: column;
+    }
+
+    .developer-card {
+        width: 100%;
+    }
+}
